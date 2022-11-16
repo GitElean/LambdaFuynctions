@@ -40,7 +40,7 @@ while(menu == True):
         alpha = lambda x: x+1
 
         print(" 𝑓(𝑥) = 𝑥+1 " )
-        a = input("ingrese el valor de x")
+        a = int(input("ingrese el valor de x: "))
         print("resultado  " + " " + str(alpha(a)))
 
 
@@ -53,7 +53,7 @@ while(menu == True):
         beta = lambda x: 2*x
 
         print("𝑔(𝑥) = 2𝑥 ")
-        a = input("ingrese el valor de x")
+        a = int(input("ingrese el valor de x: "))
         print("resultado  " + " " + str(beta(a)))
 
         break
@@ -154,7 +154,7 @@ while(menu == True):
 
     elif(option == "10"):
         print("potencia(𝑎,𝑏,𝑓,𝑥)")
-        potency = (lambda m: lambda n:lambda f: lambda x: n(m(f))(m(x)))
+        potency = (lambda f: lambda x: (f)(x))
         test("function(potency(three)(two))")
 
         break
